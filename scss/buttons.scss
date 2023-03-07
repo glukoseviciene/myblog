@@ -1,0 +1,93 @@
+button {
+    background: none;
+    border:  3px solid white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin-top: 20px;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);    
+}
+
+
+button:hover {
+    background-color: rgb(90, 56, 56);
+}
+
+button.selected {
+    box-shadow: 0 0 30px #FFE4E1;
+}
+
+.buttons {
+    width: 100px;
+    height: 300px;
+    margin-top: 70px;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    width: 50%;
+    height: 200%;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s;
+    transform: scale(0.5);
+}
+
+button:hover::before {
+    opacity: 0.5;
+    transform: translate(10%,-70%) rotate(40deg) scale(1);
+}
+ 
+
+button::after {
+    content: "";
+    position: absolute;
+    bottom: 80px;
+    left: -2%;
+    height: 2%;
+    background: white;
+    transition: 0.3s;
+}
+
+button:hover::after {
+    width: 10%;
+    transition-delay: 0.1s;
+}
+
+.tab {
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    border: 10px double white;
+}
+
+.tab img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.number {
+   display: flex;
+}
+
+.ignas {
+    width:60%;
+    height: 100px;
+}
+
+.ignas img {
+    width: 500px;
+    height: 635px;
+}

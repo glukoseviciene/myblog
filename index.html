@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="style.scss">
+    <title>Namu darbas</title>
+<body>
+    <h1 class="name">By Greta♡</h1>
+    <div class="number">
+        <div class="ignas">
+            <img src="https://images.unsplash.com/photo-1610765431323-d88c88a2b2c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" alt="">
+        </div>
+        <div class="buttons">
+            <button index="0" onclick="displayTab('pirmas')">P</button>
+            <button index="1" onclick="displayTab('antras')">L</button>
+            <button index="2" onclick="displayTab('trecias')">C</button>
+        </div>
+    
+        <div id="pirmas" class="tab">
+            <img src="https://images.unsplash.com/photo-1617374483127-b671e38e293f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="prada">
+            
+            <p> <h1>Prada</h1> is an Italian high-end luxury fashion house founded in 1913 in Milan by Mario Prada. It specializes in leather handbags, travel accessories, shoes, ready-to-wear, and other fashion accessories. Prada licenses its name and branding to Luxottica for eyewear and L’Oréal for fragrances.</p>
+        </div>
+        
+        <div id="antras" class="tab">
+           <img src="https://images.unsplash.com/photo-1596622723231-b20320c7346b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80" alt="louis">
+            <p><h1>Louis Vuitton Malletier</h1> Commonly known as Louis Vuitton, is a French high-end luxury fashion house and company founded in 1854 by Louis Vuitton.</p>
+        </div>
+        
+        <div id="trecias" class="tab">
+            <img src="https://images.unsplash.com/photo-1606391375763-6099f013d44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="chanel">
+            <p><h1>Chanel</h1> is a French high-end luxury fashion house founded in 1910 by Coco Chanel in Paris. Chanel specializes in women's ready-to-wear, luxury goods, and accessories and licenses its name and branding to Luxottica for eyewear. Chanel is well known for its No. 5 perfume and "Chanel Suit".</p>
+        </div>
+    </div>
+
+    <div class="comment"><h1 class="comment-1">What people are saying...</h1></div>
+    <section>
+        <div class="container3">
+            <div class="greta">
+                <h1>Margaret</h1>
+                <p>"This is fantastic! Thanks so much guys!</p>
+            </div>    
+            <div class="greta">
+                <h1>Fred</h1>
+                <p>"Fashion is a whole world of possibilities.."</p>
+            </div>    
+            <div class="greta">
+                <h1>Sarah</h1>
+                <p>"Thanks so much for making these free resources available to us!"</p>
+            </div>    
+    </section>
+
+    <div class="form-container">
+        <h1>Add nEw Comments...</h1>
+        <form id="add-post">
+            <div class="form-field">
+                <label id="title" for="title">Name</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <div class="form-field">
+               <label id="content" for="content">Comments</label>
+            <input name="content" type="text"> 
+            </div>
+            <div class="form-field">
+                <label id="img" for="img">Picture</label>
+                <input type="text" name="img" id="img">
+            </div>
+
+            <button class="post" type="submit">Submit</button>
+        </form>
+        </div>
+        <div id="posts" class="posts"></div>
+
+        <footer>
+           <h5> 🔐 Privacy Policy ┃ Cookies Policy ┃ 📝 Terms of Use</h5>
+        </footer>
+
+
+        <script src="script.js"></script>
+</body>
+</html>
